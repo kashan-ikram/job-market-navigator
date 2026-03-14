@@ -15,6 +15,7 @@ Ask it something like:
 - "What's the salary range for software engineers in Vancouver?"
 
 It figures out whether your question needs live data or model knowledge — then answers accordingly.
+![Demo](demo.png)
 
 ## How it works
 
