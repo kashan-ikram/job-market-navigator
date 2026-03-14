@@ -24,6 +24,9 @@ User sends a query → Agentic router classifies it → RAG fetches live job dat
 - RAG layer — embeds the query, searches FAISS index of 300 real Canadian job postings, returns the most relevant results
 - Fine-tuned LLM — DistilGPT-2 trained with LoRA on 853 job postings, handles career advice and skill-based questions
 - Agentic router — keyword-based classifier that decides which layer to call based on the query type
+- Out of scope detection — if the question is not job related, system politely redirects
+- Confidence check — if RAG search finds no relevant data, system says so instead of guessing
+- Skills extraction — for skills questions, extracts directly from job descriptions instead of generating
 
 ## Stack
 
